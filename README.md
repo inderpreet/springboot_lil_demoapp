@@ -158,3 +158,15 @@ public class AppStartupEvent implements ApplicationListener <ApplicationReadyEve
 ```
 
 This will findAll the rooms and print them to the console.
+
+---
+To connect with POSTGresql, in the pom file, replace h2 with postgresql and let maven run
+
+Next, we change the application properites for
+```
+spring.jpa.database=postgresql
+spring.datasource.url = jpdb:postgressql://localhost:5432/database_name
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+```
+---
